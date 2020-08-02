@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #ececec;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: #5e5e5e;
+}
+
+.header__icon {
+  margin: 1.5rem 1.3rem;
+  color: white;
+}
+
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100vh;
+  color: #e7e7e7;
+  background: #5e5e5e;
+}
+
+.showcase__heading {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.showcase__icon {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 160vh;
+  text-align: center;
+  background: #aaaaaa;
+}
+
+.projects__heading {
+  padding: 1.2rem 0;
+  font-size: 2rem;
+}
+
+.projects__subheading {
+  padding-bottom: 1.2rem;
+}
+
+.projects__description {
+  padding-bottom: 1.2rem;
+}
+
+.projects__image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.projects__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.projects__link {
+  text-decoration: none;
+  color: white;
+}
+
+.projects__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10rem;
+}
+
+.projects__underheading {
+  margin-bottom: 1rem;
+}
+
+.projects__icon {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 3fr 5fr;
+      grid-template-rows: 1fr 3fr 5fr;
+  background: #c41111;
+}
+
+.contact__heading {
+  text-align: center;
+  margin-top: 1.3rem;
+}
+
+.contact__methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 0.9rem;
+}
+
+.contact__list {
+  list-style: none;
+}
+
+.contact__listItem {
+  padding: 0.5rem 0;
+  color: white;
+}
+
+.contact__listIcon {
+  color: white;
+  padding: 0.9rem 0.5rem;
+  font-size: 1.4rem;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact__input {
+  padding: 0.3rem;
+}
+
+.contact__btn {
+  padding: 0.3rem;
+  margin: 0.8rem 0;
+}
+/*# sourceMappingURL=style.css.map */
