@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(236, 236, 236);
   text-align: center;
@@ -19,6 +23,13 @@ body {
   justify-content: flex-end;
   background: black;
   height: 10vh;
+  position: fixed;
+  top:0;
+  right:0;
+  &--sticky { 
+    background: rgba(211, 211, 211, 0.432); 
+    width: 100vw;
+  }
   &__icon {
     margin: 1.5rem 1.3rem;
     color: white;
@@ -48,6 +59,42 @@ body {
     padding: 1rem;
     border: 1px white solid;
     margin-top: 0.8rem;
+  }
+}
+
+.modal {
+  &__container {
+    @include flex(column, center);
+    background: rgba(37, 37, 37, 0.815);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  &__menu {
+    @include flex(column, center);
+    background: white;
+    color: black;
+    height: 25vh;
+    width: 50vw;
+    align-self: center;
+  }
+  &__close {
+    transform: rotate(45deg);
+    position: fixed;
+    top:16.2rem;
+    left:16rem;
+    font-size: 1.1rem;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    padding-top: 0.7rem;
+  }
+  &__link {
+    text-decoration: none;
   }
 }
 
@@ -81,7 +128,7 @@ body {
     grid-column: 1 / span 3;
   }
   &__image:nth-child(3n) {
-    width: 60%;
+    width: 77%;
     margin: 0 auto;
     grid-column: 4 / span 3;
   }

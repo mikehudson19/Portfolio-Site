@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #ececec;
   text-align: center;
@@ -20,6 +24,14 @@ body {
           justify-content: flex-end;
   background: black;
   height: 10vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.header--sticky {
+  background: rgba(211, 211, 211, 0.432);
+  width: 100vw;
 }
 
 .header__icon {
@@ -72,6 +84,65 @@ body {
   padding: 1rem;
   border: 1px white solid;
   margin-top: 0.8rem;
+}
+
+.modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(37, 37, 37, 0.815);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  color: black;
+  height: 25vh;
+  width: 50vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.modal__close {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: fixed;
+  top: 16.2rem;
+  left: 16rem;
+  font-size: 1.1rem;
+}
+
+.modal__list {
+  list-style: none;
+}
+
+.modal__item {
+  padding-top: 0.7rem;
+}
+
+.modal__link {
+  text-decoration: none;
 }
 
 .projects {
@@ -128,7 +199,7 @@ body {
 }
 
 .projects__image:nth-child(3n) {
-  width: 60%;
+  width: 77%;
   margin: 0 auto;
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
