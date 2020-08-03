@@ -5,6 +5,10 @@
 
 body {
   color: #ececec;
+  text-align: center;
+  letter-spacing: 0.4px;
+  background: black;
+  font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -14,7 +18,8 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: #5e5e5e;
+  background: black;
+  height: 10vh;
 }
 
 .header__icon {
@@ -32,20 +37,41 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 100vh;
+  height: 90vh;
   color: #e7e7e7;
-  background: #5e5e5e;
 }
 
 .showcase__heading {
   font-size: 2rem;
   text-align: center;
-  padding: 0 2rem;
+  padding: 3rem 2rem;
 }
 
 .showcase__icon {
   font-size: 2rem;
-  text-align: center;
+}
+
+.showcase__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 55%;
+  margin: 0 auto;
+}
+
+.showcase__link {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px white solid;
+  margin-top: 0.8rem;
 }
 
 .projects {
@@ -59,14 +85,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 160vh;
-  text-align: center;
-  background: #aaaaaa;
 }
 
 .projects__heading {
-  padding: 1.2rem 0;
-  font-size: 2rem;
+  font-size: 2.1rem;
+  padding-top: 1.6rem;
+  text-align: right;
+  margin-right: 2.5rem;
 }
 
 .projects__subheading {
@@ -77,9 +102,37 @@ body {
   padding-bottom: 1.2rem;
 }
 
-.projects__image {
+.projects__images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.projects__image:first-child {
   width: 80%;
+  margin: 1rem auto;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / span 6;
+}
+
+.projects__image:nth-child(2n) {
+  width: 60%;
   margin: 0 auto;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+}
+
+.projects__image:nth-child(3n) {
+  width: 60%;
+  margin: 0 auto;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / span 3;
 }
 
 .projects__links {
@@ -90,14 +143,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 1rem 0;
 }
 
 .projects__link {
   text-decoration: none;
   color: white;
+  padding: 0 0.65rem;
 }
 
 .projects__info {
@@ -111,7 +166,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 10rem;
+  margin: 1rem 0 4rem 0;
 }
 
 .projects__underheading {
@@ -123,17 +178,32 @@ body {
   text-align: center;
 }
 
+.projects__break {
+  border-bottom: 1px white solid;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 .contact {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 3fr 5fr;
-      grid-template-rows: 1fr 3fr 5fr;
-  background: #c41111;
+  -ms-grid-rows: 1fr 2fr 3fr;
+      grid-template-rows: 1fr 2fr 3fr;
 }
 
 .contact__heading {
-  text-align: center;
-  margin-top: 1.3rem;
+  text-align: right;
+  margin-right: 2.5rem;
+  padding-top: 1rem;
+  font-size: 2.1rem;
+}
+
+.contact__break {
+  border-bottom: 1px white solid;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .contact__methods {
@@ -148,7 +218,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 0 0.9rem;
 }
 
 .contact__list {
@@ -178,7 +247,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 80%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .contact__input {
@@ -188,5 +257,45 @@ body {
 .contact__btn {
   padding: 0.3rem;
   margin: 0.8rem 0;
+}
+
+.about {
+  height: 80vh;
+}
+
+.about__heading {
+  font-size: 2.1rem;
+  text-align: right;
+  margin-right: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.about__break {
+  border-bottom: 1px white solid;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.about__subheading {
+  text-align: center;
+  padding-top: 1.2rem;
+}
+
+.about__tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem;
+}
+
+.about__logo {
+  width: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
