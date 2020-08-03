@@ -3,70 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/f97d0e5ba4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f97d0e5ba4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Michael Hudson</title>
   </head>
   <body>
     <header class="header">
       <i class="header__icon fas fa-bars"></i>
     </header>
+
     <section class="showcase">
-      <h1 class="showcase__heading">My name is Michael and I'm a web developer.</h1>
-      <i class="showcase__icon fas fa-long-arrow-alt-down"></i>
+      <h1 class="showcase__heading">
+        My name is Michael and I'm a web developer.
+      </h1>
+      <div class="showcase__links">
+        <a class="showcase__link" href="#projects">View My Work</a>
+        <a class="showcase__link" href="#contact">Contact Me</a>
+      </div>
     </section>
 
-    <section class="project">
-      <h1 class="project__heading">VIKKI Design</h1>
-      <h2 class="project__subheading">E-Commerce Jewellery Website</h2>
-      <img class="project__image" src="" alt="">
-      <div class="project__links">
-        <button class="project__link">Live Site</button>
-        <button class="project__link">View Git</button>
+    <section id="projects" class="projects">
+      <h1 class="projects__heading">My Work</h1>
+      <div class="projects__break"></div>
+      <h2 class="projects__subheading">VIKKI Design</h2>
+      <h3 class="projects__description">E-Commerce Jewellery Website</h3>
+      <div class="projects__images">
+        <img class="projects__image" src="/images/vikki-full.png" alt="" />
+        <img
+          class="projects__image"
+          src="/images/vikki-mobile1.png"
+          alt=""
+        />
+        <img
+          class="projects__image"
+          src="/images/vikki-mobile2.png"
+          alt=""
+        />
       </div>
+      <div class="projects__links">
+        <a class="projects__link" href="https://nifty-pike-1ff3d2.netlify.app/">Live Site</a>
+        <a class="projects__link" href="https://github.com/mikehudson19/VIKKI_Design">View GitHub</a>
+      </div>
+      <div class="projects__info">
+        <h4 class="projects__underheading">Tech Stack</h4>
+        <p class="projects__text">HTML, CSS, JavaScript, Node.js, MongoDB</p>
+      </div>
+      <div class="projects__break"></div>
+
+      <h2 class="projects__subheading">Node.js Replica Site</h2>
+      <h3 class="projects__description">Replica of the Node.js website</h3>
+      <div class="projects__images">
+        <img class="projects__image" src="/images/placeholder.png" alt="" />
+        <img
+          class="projects__image"
+          src="/images/mobile-placeholder.png"
+          alt=""
+        />
+        <img
+          class="projects__image"
+          src="/images/mobile-placeholder2.png"
+          alt=""
+        />
+      </div>
+      <div class="projects__links">
+        <a class="projects__link" href="">Live Site</a>
+        <a class="projects__link" href="">View GitHub</a>
+      </div>
+      <div class="projects__info">
+        <h4 class="projects__underheading">Tech Stack</h4>
+        <p class="projects__text">HTML, CSS, JavaScript</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
       <div>
-        <h3 class="project__underheading">Tech Stack</h3>
-        <p class="project__text">HTML, CSS, JavaScript, Node.js, MongoDB</p>
-      </div>
-      <i class="project__icon fas fa-long-arrow-alt-down"></i>
-    </section>
-
-    <section class="project">
-      <h1 class="project__heading">Node.js Replica Site</h1>
-      <h2 class="project__subheading">Replica of the Node.js website</h2>
-      <img class="project__image" src="" alt="">
-      <div class="project__links">
-        <button class="project__link">Live Site</button>
-        <button class="project__link">View Git</button>
-      </div>
-      <div>
-        <h3 class="project__underheading">Tech Stack</h3>
-        <p class="project__text">HTML, CSS, JavaScript</p>
-      </div>
-      <i class="project__icon fas fa-long-arrow-alt-down"></i>
-    </section>
-
-    <section class="contact">
       <h1 class="contact__heading">Contact Me</h1>
+      <div class="contact__break"></div>
+    </div>
       <div class="contact__methods">
         <ul class="contact__list">
-          <li>mikehudson19@live.co.uk</li>
-          <li>076 395 3475</li>
+          <li class="contact__listItem">mikehudson19@live.co.uk</li>
+          <li class="contact__listItem">076 395 3475</li>
+          <li>
+            <a href=""><i class="contact__listIcon fab fa-instagram"></i></a>
+            <a href=""><i class="contact__listIcon fab fa-linkedin-in"></i></a>
+            <a href=""><i class="contact__listIcon fab fa-github"></i></a>
+          </li>
         </ul>
-        <div class="contact__icons">
-          <span class="contact__icon">IG</span>
-          <span class="contact__icon">Git</span>
-          <span class="contact__icon">Linkedin</span>
-        </div>
       </div>
-      <div class="contact__form">
-        <form action="">
-          <input type="text">
-          <input type="email">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button class="contact__btn">Submit</button>
-        </form>
-      </div>
+      <form class="contact__form" action="">
+        <input class="contact__input" type="text" placeholder="Name" />
+        <input class="contact__input" type="email" placeholder="E-Mail" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Type your message here..."
+        ></textarea>
+        <button class="contact__btn">Submit</button>
+      </form>
     </section>
+
+    <section class="about">
+      <h1 class="about__heading">About Me</h1>
+      <div class="about__break"></div>
+      <p>
+        My name is Michael.<br />I used to work in Finance.<br />
+        I now want to work in web development.<br />I've travelled alot.<br />Hire
+        me please.
+      </p>
+      <h2 class="about__subheading">Technologies I use:</h2>
+      <ul class="about__tech">
+        <li><img class="about__logo" src="/images/logos/html.png" alt="" /></li>
+        <li><img class="about__logo" src="/images/logos/css.jpg" alt="" /></li>
+        <li>
+          <img class="about__logo" src="/images/logos/javascript.png" alt="" />
+        </li>
+        <li><img class="about__logo" src="/images/logos/node.jpg" alt="" /></li>
+        <li>
+          <img class="about__logo" src="/images/logos/mongo.jpg" alt="" />
+        </li>
+      </ul>
+    </section>
+    <script src="app.js"></script>
   </body>
 </html>
-<!-- <i class="fas fa-long-arrow-alt-down"></i> -->
