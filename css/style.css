@@ -264,6 +264,7 @@ body {
   display: grid;
   -ms-grid-rows: 0.5fr 1fr 2fr;
       grid-template-rows: 0.5fr 1fr 2fr;
+  height: 100vh;
 }
 
 .contact__heading {
@@ -318,6 +319,46 @@ body {
 
 .contact__input {
   padding: 0.3rem;
+  margin-bottom: 0.4rem;
+  border: 0.8px #919191 solid;
+}
+
+.contact__input::-webkit-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__input:-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__input::-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__input::placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__message {
+  padding: 0.3rem;
+  border: 0.8px #919191 solid;
+  resize: none;
+}
+
+.contact__message::-webkit-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__message:-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__message::-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__message::placeholder {
+  font-family: 'Lato', sans-serif;
 }
 
 .contact__btn {
@@ -340,6 +381,10 @@ body {
   padding-top: 1.2rem;
 }
 
+.about__text {
+  padding: 0.6rem 2rem;
+}
+
 .about__tech {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,6 +403,6 @@ body {
 }
 
 .about__logo {
-  width: 3rem;
+  width: 3.5rem;
 }
 /*# sourceMappingURL=style.css.map */

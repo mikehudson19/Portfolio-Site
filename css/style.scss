@@ -161,6 +161,7 @@ body {
 .contact {
   display: grid;
   grid-template-rows: 0.5fr 1fr 2fr;
+  height: 100vh;
   &__heading {
     font-size: $large-heading;
     padding: 1.6rem 0;
@@ -189,6 +190,19 @@ body {
   }
   &__input {
     padding: 0.3rem;
+    margin-bottom: 0.4rem;
+    border: 0.8px rgb(145, 145, 145) solid;
+  }
+  &__input::placeholder {
+    font-family: 'Lato', sans-serif;
+  }
+  &__message {
+    padding: 0.3rem;
+    border: 0.8px rgb(145, 145, 145) solid;
+    resize: none;
+  }
+  &__message::placeholder {
+    font-family: 'Lato', sans-serif;
   }
   &__btn {
     padding: 0.3rem;
@@ -207,6 +221,9 @@ body {
     text-align: center;
     padding-top: 1.2rem;
   }
+  &__text {
+    padding: 0.6rem 2rem;
+  }
   &__tech {
     @include flex(row, space-around);
     padding: 2rem;
@@ -214,6 +231,6 @@ body {
     align-items: center;
   }
   &__logo {
-    width: 3rem;
+    width: 3.5rem;
   }
 }
