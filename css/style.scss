@@ -11,35 +11,36 @@ html {
 }
 
 body {
-  color: rgb(236, 236, 236);
+  color: rgb(0, 0, 0);
   text-align: center;
   letter-spacing: 0.4px;
-  background: black;
+  background: b(238, 238, 238);
   font-family: 'Lato', sans-serif;
 }
 
 .header {
   display: flex;
   justify-content: flex-end;
-  background: black;
-  height: 10vh;
+  background: b(238, 238, 238);
+  height: 8vh;
   position: fixed;
   top:0;
   right:0;
   &--sticky { 
-    background: rgba(211, 211, 211, 0.432); 
     width: 100vw;
+    background: rgba(255, 255, 255, 0);
+    justify-content: flex-start;
   }
   &__icon {
     margin: 1.5rem 1.3rem;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 }
 
 .showcase {
   @include flex(column, space-around);
-  height: 90vh;
-  color: rgb(231, 231, 231);
+  height: 100vh;
+  color: rgb(2, 2, 2);
   &__heading {
     font-size: 2rem;
     text-align: center;
@@ -54,10 +55,10 @@ body {
     margin: 0 auto;
   }
   &__link {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 1rem;
-    border: 1px white solid;
+    border: 1px black solid;
     margin-top: 0.8rem;
   }
 }
@@ -74,7 +75,7 @@ body {
   }
   &__menu {
     @include flex(column, center);
-    background: white;
+    background: rgb(255, 255, 255);
     color: black;
     height: 25vh;
     width: 50vw;
@@ -102,9 +103,8 @@ body {
   @include flex(column, center);
   &__heading {
     font-size: $large-heading;
-    padding-top: 1.6rem;
-    text-align: right;
-    margin-right: 2.5rem;
+    padding: 1.6rem 0;
+    text-align: center;
   }
   &__subheading {
     padding-bottom: 1.2rem;
@@ -114,23 +114,27 @@ body {
   }
   &__images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
   &__image:first-child {
     width: 80%;
     margin: 1rem auto;
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 2;
+    box-shadow: 0 0 12px 4px rgb(214, 214, 214);
   }
   &__image:nth-child(2n) {
     width: 60%;
     margin: 0 auto;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 1;
+    box-shadow: 0 0 12px 4px rgb(214, 214, 214);
   }
   &__image:nth-child(3n) {
-    width: 77%;
-    margin: 0 auto;
-    grid-column: 4 / span 3;
+    width: 70%;
+    // margin-left: 2.4rem;
+    grid-column: 2 / span 1;
+    box-shadow: 0 0 12px 4px rgb(214, 214, 214);
+    align-self: center;
   }
   &__links {
     @include flex(row, center);
@@ -138,7 +142,7 @@ body {
   }
   &__link {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0 0.65rem;
   }
   &__info {
@@ -152,28 +156,15 @@ body {
     font-size: 2rem;
     text-align: center;
   }
-  &__break {
-    border-bottom: 1px white solid;
-    width: 80vw;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-  }
 }
 
 .contact {
   display: grid;
-  grid-template-rows: 1fr 2fr 3fr;
+  grid-template-rows: 0.5fr 1fr 2fr;
   &__heading {
-    text-align: right;
-    margin-right: 2.5rem;
-    padding-top: 1rem;
     font-size: $large-heading;
-  }
-  &__break {
-    border-bottom: 1px white solid;
-    width: 80vw;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    padding: 1.6rem 0;
+    text-align: center;
   }
   &__methods {
     @include flex(column, center);
@@ -184,10 +175,10 @@ body {
   }
   &__listItem {
     padding: 0.5rem 0;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   &__listIcon {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0.9rem 0.5rem;
     font-size: 1.4rem;
   }
@@ -209,15 +200,8 @@ body {
   height: 80vh;
   &__heading {
     font-size: $large-heading;
-    text-align: right;
-    margin-right: 2.5rem;
-    margin-top: 2.5rem;
-  }
-  &__break {
-    border-bottom: 1px white solid;
-    width: 80vw;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    padding: 1.6rem 0;
+    text-align: center;
   }
   &__subheading {
     text-align: center;
@@ -226,6 +210,8 @@ body {
   &__tech {
     @include flex(row, space-around);
     padding: 2rem;
+    list-style: none;
+    align-items: center;
   }
   &__logo {
     width: 3rem;
