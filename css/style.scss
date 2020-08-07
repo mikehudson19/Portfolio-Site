@@ -156,6 +156,7 @@ body {
     padding: 0.45rem 0.65rem;
     border: 0.4px rgb(0, 0, 0) solid;
     margin: 0.8rem;
+    font-size: 0.8rem;
     color: rgb(255, 255, 255);
     background: rgb(51, 51, 51);
   }
@@ -218,6 +219,7 @@ body {
   }
   &__message::placeholder {
     font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
   }
   &__btn {
     padding: 0.3rem;
@@ -239,11 +241,12 @@ body {
   &__subheading {
     font-size: $medium-heading;
     text-align: center;
-    padding-top: 1.2rem;
+    padding-top: 1.6rem;
   }
   &__text {
     padding: 0.6rem 2rem;
     font-size: 1.25rem;
+    margin-bottom: 1rem;
     &--bold {
       font-weight: 700;
     }
