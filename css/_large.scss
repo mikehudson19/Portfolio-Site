@@ -1,3 +1,76 @@
-@media (min-width: 880px) {
+@media (min-width: 920px) {
 
+  .projects {
+    height: 85vh;
+    &__project1 {
+      display: grid;
+      grid-template-columns: 5% 50% 25% 15% 5%;
+      grid-template-rows: repeat(5, 3rem);
+    }
+    &__project2 {
+      display: grid;
+      grid-template-columns: 5% 50% 25% 15% 5%;
+      grid-template-rows: repeat(5, 3rem);
+      margin-bottom: 2rem;
+    }
+    &__images {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-template-rows: 1fr; 
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 5;
+    }
+    &__image:first-child {
+      width: 95%;
+      margin: 0;
+      grid-column: 1 /span 1;
+      grid-row: 1 / span 1;
+      justify-self: center;
+      align-self: center;
+    }
+    &__image:nth-child(2n) {
+      width: 68%;
+      justify-self: center;
+      align-self: center;
+      grid-column: 2 /span 1;
+      grid-row: 1 / span 1;
+    }
+    &__image:nth-child(3n) {
+      width: 30%;
+      box-shadow: 0 0 12px 4px rgb(214, 214, 214);
+      align-self: center;
+      justify-self: center;
+      grid-column: 2 /span 1;
+      grid-row: 2 / span 1;
+    }
+    &__subheading {
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+      align-self: start;
+      justify-self: center;
+      padding-bottom: 0;
+    }
+    &__links {
+      @include flex(column, center);
+      grid-column: 4 / span 1;
+      grid-row: 2 / span 2;
+      align-self: start;
+    }
+    &__link {
+      width: 50%;
+    }
+    &__description {
+      grid-column: 3 /span 1;
+      grid-row: 3 / span 1;
+      justify-self: center;
+      align-self: start;
+      padding-bottom: 0;
+    }
+    &__info {
+      @include flex(column, center);
+      grid-column: 3 / span 1;
+      grid-row: 4 / span 2;
+      align-self: center;
+    }
+  }
 }

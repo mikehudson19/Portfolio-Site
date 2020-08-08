@@ -3,18 +3,29 @@
     &__icon {
       display: none;
     }
+    &__nav {
+      background: rgb(51, 51, 51);
+      width: 100vw;
+      font-size: 1.1rem;
+      &--sticky {
+        background: rgba(27, 27, 27, 0.432);
+        height: 2rem;
+        font-size: 0.8rem;
+      }
+    }
     &__menu {
       display: flex;
-      flex-direction: row;
+      height: 100%;
       list-style: none;
-      padding: 1.4rem;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 1.5rem;
     }
     &__item {
       margin-left: 1rem;
       text-decoration: none;
       font-weight: 700;
-      color: black;
-      font-size: 1.2rem;
+      color: white;
       &:hover {
         cursor: pointer;
         border-bottom: 1.45px black solid;
@@ -31,9 +42,7 @@
 
   .projects {
     height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex(column, space-between);
     &__heading {
       padding: 1.6rem 0 0;
     }
@@ -46,20 +55,16 @@
       display: grid;
       grid-template-columns: 5% 50% 25% 15% 5%;
       grid-template-rows: repeat(5, 3rem);
-      margin-bottom: 2rem;
     }
     &__images {
       display: grid;
       grid-template-columns: 70% 30%;
       grid-template-rows: 1fr; 
-      flex-direction: row;
       grid-column: 2 / span 1;
       grid-row: 1 / span 5;
     }
     &__image:first-child {
       width: 95%;
-      margin: 0;
-      box-shadow: 0 0 12px 4px rgb(214, 214, 214);
       grid-column: 1 /span 1;
       grid-row: 1 / span 1;
       justify-self: center;
@@ -67,7 +72,6 @@
     }
     &__image:nth-child(2n) {
       width: 68%;
-      box-shadow: 0 0 12px 4px rgb(214, 214, 214);
       justify-self: center;
       align-self: center;
       grid-column: 2 /span 1;
@@ -75,12 +79,6 @@
     }
     &__image:nth-child(3n) {
          display: none;
-      // width: 30%;
-      // box-shadow: 0 0 12px 4px rgb(214, 214, 214);
-      // align-self: center;
-      // justify-self: center;
-      // grid-column: 2 /span 1;
-      // grid-row: 2 / span 1;
     }
     &__subheading {
       grid-column: 3 / span 2;
@@ -90,8 +88,7 @@
       padding-bottom: 0;
     }
     &__links {
-      display: flex;
-      justify-content: flex-end;
+      @include flex(row, flex-end);
       grid-column: 3 / span 2;
       grid-row: 4 / span 1;
       align-items: center;
@@ -108,13 +105,6 @@
     }
     &__info {
       display: none;
-      grid-column: 3 / span 1;
-      grid-row: 4 / span 1;
-      align-self: center;
-      margin: 0;
-    }
-    &__underheading {
-      margin-bottom: 0;
     }
   }
 

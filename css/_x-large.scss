@@ -1,0 +1,27 @@
+@media (min-width: 1000px) {
+
+  .projects {
+    height: 85vh;
+    
+    &__images {
+      display: grid;
+      max-width: 40rem;
+      grid-template-columns: 60% 20% 20%;
+    }
+    &__image:first-child {
+      width: 95%;
+    }
+    &__image:nth-child(2n) {
+      width: 85%;
+    }
+    &__image:nth-child(3n) {
+      display: block;
+      width: 85%;
+      grid-column: 3 /span 1;
+      grid-row: 1 / span 1;
+    }
+   
+    
+    
+  }
+}
