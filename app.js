@@ -30,8 +30,8 @@ document.addEventListener('click', (e) => {
 })
 
 // Sticky Navbar
-// window.addEventListener('scroll', () => {
-//   const header = document.querySelector('.header');
-//   header.classList.toggle('header--sticky', window.scrollY > 55);
-// })
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.header__nav');
+  navbar.classList.toggle('header__nav--sticky', window.scrollY > 55);
+})
 
