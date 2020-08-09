@@ -28,7 +28,7 @@
       color: white;
       &:hover {
         cursor: pointer;
-        border-bottom: 1.45px black solid;
+        border-bottom: 1.45px rgb(230, 230, 230) solid;
       }
     }
   }
@@ -36,6 +36,10 @@
   .showcase {
     &__links {
       width: 18rem;
+    }
+    &__link:hover {
+        background: rgb(197, 197, 197);
+        color: rgb(0, 0, 0);
     }
   }
 
@@ -95,6 +99,10 @@
     }
     &__link {
       width: 50%;
+      &:hover {
+        background: rgb(197, 197, 197);
+        color: rgb(0, 0, 0);
+      }
     }
     &__description {
       grid-column: 3 /span 2;
@@ -129,5 +137,14 @@
     grid-row: 2 / span 1;
     width: 75%;
   }
- } 
+  &__listIcon:hover {
+    color: rgb(28, 133, 24);
+  }
+  &__btn:hover {
+    background: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  
+}
 }

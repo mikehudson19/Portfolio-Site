@@ -240,7 +240,6 @@ body {
 .projects__link {
   text-decoration: none;
   padding: 0.45rem 0.65rem;
-  border: 0.4px black solid;
   margin: 0.8rem;
   font-size: 0.8rem;
   color: white;
@@ -380,6 +379,7 @@ body {
   color: white;
   background: #333333;
   font-family: 'Thasadith', sans-serif;
+  border: none;
 }
 
 .about {
@@ -415,7 +415,6 @@ body {
   padding: 0.45rem 0.65rem;
   color: white;
   background: #333333;
-  margin-top: 3rem;
 }
 
 .about__tech {
@@ -475,10 +474,14 @@ body {
   }
   .header__item:hover {
     cursor: pointer;
-    border-bottom: 1.45px black solid;
+    border-bottom: 1.45px #e6e6e6 solid;
   }
   .showcase__links {
     width: 18rem;
+  }
+  .showcase__link:hover {
+    background: #c5c5c5;
+    color: black;
   }
   .projects {
     height: 85vh;
@@ -595,6 +598,10 @@ body {
   .projects__link {
     width: 50%;
   }
+  .projects__link:hover {
+    background: #c5c5c5;
+    color: black;
+  }
   .projects__description {
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
@@ -645,6 +652,14 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 2 / span 1;
     width: 75%;
+  }
+  .contact__listIcon:hover {
+    color: #1c8518;
+  }
+  .contact__btn:hover {
+    background: #c5c5c5;
+    color: black;
+    cursor: pointer;
   }
 }
 

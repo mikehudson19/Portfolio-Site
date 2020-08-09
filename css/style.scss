@@ -148,7 +148,6 @@ body {
   &__link {
     text-decoration: none;
     padding: 0.45rem 0.65rem;
-    border: 0.4px rgb(0, 0, 0) solid;
     margin: 0.8rem;
     font-size: 0.8rem;
     color: rgb(255, 255, 255);
@@ -221,6 +220,7 @@ body {
     color: rgb(255, 255, 255);
     background: rgb(51, 51, 51);
     font-family: 'Thasadith', sans-serif;
+    border: none;
   }
 }
 
@@ -251,7 +251,6 @@ body {
     padding: 0.45rem 0.65rem;
     color: rgb(255, 255, 255);
     background: rgb(51, 51, 51);
-    margin-top: 3rem;
   }
   &__tech {
     @include flex(row, space-around);
