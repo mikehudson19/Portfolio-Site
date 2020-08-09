@@ -351,6 +351,7 @@ body {
   padding: 0.3rem;
   border: 0.8px #919191 solid;
   resize: none;
+  margin-bottom: 0.8rem;
 }
 
 .contact__message::-webkit-input-placeholder {

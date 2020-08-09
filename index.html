@@ -121,11 +121,10 @@
         </ul>
       </div>
       <form class="contact__form" method="POST" action="/pages/success" data-netlify="true" name="contact" data-netlify-recaptcha="true">
-        <input class="contact__input" type="text" placeholder="Name" />
-        <input class="contact__input" type="email" placeholder="E-Mail" />
+        <input class="contact__input" type="text" placeholder="Name" name="name"/>
+        <input class="contact__input" type="email" placeholder="E-Mail" name="email" />
         <textarea
-          name=""
-          id=""
+          name="message"
           cols="30"
           rows="10"
           class="contact__message"
