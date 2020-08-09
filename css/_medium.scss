@@ -43,7 +43,6 @@
     }
   }
 
-
   .projects {
     height: 85vh;
     @include flex(column, space-between);
@@ -116,9 +115,6 @@
     }
   }
 
-
-
-
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -144,7 +140,6 @@
     background: rgb(197, 197, 197);
     color: rgb(0, 0, 0);
     cursor: pointer;
-  }
-  
-}
+  } 
+ }
 }

@@ -120,7 +120,7 @@
           </li>
         </ul>
       </div>
-      <form class="contact__form" action="">
+      <form class="contact__form" method="POST" action="/pages/success" data-netlify="true" name="contact" data-netlify-recaptcha="true">
         <input class="contact__input" type="text" placeholder="Name" />
         <input class="contact__input" type="email" placeholder="E-Mail" />
         <textarea
@@ -131,6 +131,7 @@
           class="contact__message"
           placeholder="Write your message here..."
         ></textarea>
+        <div data-netlify-recaptcha="true"></div>
         <button class="contact__btn">Submit</button>
       </form>
     </section>
