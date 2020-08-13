@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(255, 255, 255, 0);
+  height: 8vh;
+  position: fixed;
+  top:0;
+  right:0;
+  &__icon {
+    margin: 1.5rem 1.3rem;
+    color: rgb(0, 0, 0);
+  }
+  &__menu {
+    display: none;
+  }
+}

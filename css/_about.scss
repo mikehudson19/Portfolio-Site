@@ -1,0 +1,38 @@
+.about {
+  min-height: 100vh;
+  background: rgb(247, 247, 247);
+  &__heading {
+    font-size: $large-heading;
+    padding: 1.6rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__subheading {
+    font-size: $medium-heading;
+    text-align: center;
+    padding-top: 1.6rem;
+  }
+  &__text {
+    padding: 0.6rem 2.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    &--bold {
+      font-weight: 700;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    padding: 0.45rem 0.65rem;
+    color: $light-color;
+    background: $dark-color;
+  }
+  &__tech {
+    @include flex(row, space-around);
+    padding: 2rem;
+    list-style: none;
+    align-items: center;
+  }
+  &__logo {
+    width: 3.5rem;
+  }
+}

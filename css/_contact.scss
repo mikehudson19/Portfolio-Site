@@ -1,0 +1,59 @@
+.contact {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 2fr;
+  height: 100vh;
+  font-size: 1.25rem;
+  &__heading {
+    font-size: $large-heading;
+    padding: 1.6rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__methods {
+    @include flex(column, center);
+    text-align: center;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__listItem {
+    padding: 0.5rem 0;
+    color: rgb(0, 0, 0);
+  }
+  &__listIcon {
+    color: rgb(0, 0, 0);
+    padding: 0.9rem 0.5rem;
+    font-size: 1.4rem;
+  }
+  &__form {
+    @include flex(column, center);
+    width: 72%;
+    margin: 1rem auto;
+  }
+  &__input {
+    padding: 0.3rem;
+    margin-bottom: 0.4rem;
+    border: 0.8px $border-color solid;
+  }
+  &__input::placeholder {
+    font-family: 'Lato', sans-serif;
+  }
+  &__message {
+    padding: 0.3rem;
+    border: 0.8px $border-color solid;
+    resize: none;
+    margin-bottom: 0.8rem;
+  }
+  &__message::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
+  }
+  &__btn {
+    padding: 0.3rem;
+    margin: 0.8rem 0;
+    color: $light-color;
+    background: $dark-color;
+    font-family: 'Thasadith', sans-serif;
+    border: none;
+  }
+}

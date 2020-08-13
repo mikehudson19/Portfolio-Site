@@ -1,0 +1,63 @@
+
+.projects {
+  @include flex(column, center);
+  background: $light-color;
+  &__heading {
+    font-size: $large-heading;
+    padding: 1.6rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__subheading {
+    font-size: $medium-heading;
+    padding-bottom: 1.2rem;
+  }
+  &__description {
+    padding-bottom: 1.2rem;
+  }
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1rem;
+  }
+  &__image:first-child {
+    width: 75%;
+    margin: 0 auto;
+    grid-column: 1 / span 7;
+    box-shadow: 0 0 12px 4px rgb(214, 214, 214);
+  }
+  &__image:nth-child(2n) {
+    width: 60%;
+    grid-column: 1 / span 3;
+    box-shadow: 0 0 12px 4px rgb(214, 214, 214);
+    justify-self: end;
+  }
+  &__image:nth-child(3n) {
+    width: 70%;
+    grid-column: 4 / span 3;
+    box-shadow: 0 0 12px 4px rgb(214, 214, 214);
+    align-self: center;
+    justify-self: end;
+  }
+  &__links {
+    @include flex(row, center);
+    margin: 1rem 0;
+  }
+  &__link {
+    text-decoration: none;
+    padding: 0.45rem 0.65rem;
+    margin: 0.8rem;
+    font-size: 0.8rem;
+    color: $light-color;
+    background: $dark-color;
+  }
+  &__info {
+    @include flex(column, center);
+    margin: 1rem 0 4rem 0;
+  }
+  &__underheading {
+    font-size: $small-heading;
+    margin-bottom: 1rem;
+  }
+}
