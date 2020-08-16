@@ -23,18 +23,23 @@
   }
   &__image:first-child {
     width: 75%;
+    // height: 75%;
     margin: 0 auto;
     grid-column: 1 / span 7;
     box-shadow: 0 0 12px 4px rgb(214, 214, 214);
   }
   &__image:nth-child(2n) {
     width: 60%;
+    // height: 70%;
+
     grid-column: 1 / span 3;
     box-shadow: 0 0 12px 4px rgb(214, 214, 214);
     justify-self: end;
   }
   &__image:nth-child(3n) {
     width: 70%;
+    // height: 65%;
+
     grid-column: 4 / span 3;
     box-shadow: 0 0 12px 4px rgb(214, 214, 214);
     align-self: center;
