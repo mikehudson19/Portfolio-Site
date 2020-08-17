@@ -81,13 +81,14 @@ body {
     height: 25vh;
     width: 50vw;
     align-self: center;
+    position: relative;
   }
   &__close {
     transform: rotate(45deg);
-    position: fixed;
-    top:16.2rem;
-    left:16rem;
-    font-size: 1.1rem;
+    position: absolute;
+    top: 0.6rem;
+    right:1rem;
+    font-size: 1.5rem;
   }
   &__list {
     list-style: none;

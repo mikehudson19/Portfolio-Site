@@ -125,15 +125,16 @@ body {
   width: 50vw;
   -ms-flex-item-align: center;
       align-self: center;
+  position: relative;
 }
 
 .modal__close {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  position: fixed;
-  top: 16.2rem;
-  left: 16rem;
-  font-size: 1.1rem;
+  position: absolute;
+  top: 0.6rem;
+  right: 1rem;
+  font-size: 1.5rem;
 }
 
 .modal__list {
