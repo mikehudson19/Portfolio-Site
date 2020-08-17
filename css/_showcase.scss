@@ -46,13 +46,14 @@
     height: 25vh;
     width: 50vw;
     align-self: center;
+    position: relative;
   }
   &__close {
     transform: rotate(45deg);
-    position: relative;
-    top: -1.2rem;
-    left: 6rem;
-    font-size: 1.1rem;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.9rem;
+    font-size: 1.5rem;
     color: $dark-color;
   }
   &__list {
