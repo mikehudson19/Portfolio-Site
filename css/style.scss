@@ -22,8 +22,6 @@ body {
   font-family: 'Thasadith', sans-serif;
 }
 
-<<<<<<< HEAD
-=======
 .header {
   display: flex;
   justify-content: flex-end;
@@ -93,7 +91,7 @@ body {
     transform: rotate(45deg);
     position: absolute;
     top: 0.6rem;
-    right:1rem;
+    right: 1rem;
     font-size: 1.5rem;
   }
   &__list {
@@ -270,7 +268,6 @@ body {
     width: 3.5rem;
   }
 }
->>>>>>> fixes
 
 @import "./medium";
 @import "./large";
