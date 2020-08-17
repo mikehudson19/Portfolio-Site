@@ -486,7 +486,6 @@ body {
     color: black;
   }
   .projects {
-    height: 85vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -510,6 +509,14 @@ body {
         grid-template-rows: repeat(5, 3rem);
   }
   .projects__project2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5% 50% 25% 15% 5%;
+        grid-template-columns: 5% 50% 25% 15% 5%;
+    -ms-grid-rows: (3rem)[5];
+        grid-template-rows: repeat(5, 3rem);
+  }
+  .projects__project3 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 5% 50% 25% 15% 5%;
@@ -666,22 +673,27 @@ body {
 }
 
 @media (min-width: 920px) {
-  .projects {
-    height: 85vh;
-  }
   .projects__project1 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 5% 50% 25% 15% 5%;
-        grid-template-columns: 5% 50% 25% 15% 5%;
+    -ms-grid-columns: 3% 50% 30% 14% 3%;
+        grid-template-columns: 3% 50% 30% 14% 3%;
     -ms-grid-rows: (3rem)[5];
         grid-template-rows: repeat(5, 3rem);
   }
   .projects__project2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 5% 50% 25% 15% 5%;
-        grid-template-columns: 5% 50% 25% 15% 5%;
+    -ms-grid-columns: 3% 50% 30% 14% 3%;
+        grid-template-columns: 3% 50% 30% 14% 3%;
+    -ms-grid-rows: (3rem)[5];
+        grid-template-rows: repeat(5, 3rem);
+  }
+  .projects__project3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3% 50% 30% 14% 3%;
+        grid-template-columns: 3% 50% 30% 14% 3%;
     -ms-grid-rows: (3rem)[5];
         grid-template-rows: repeat(5, 3rem);
     margin-bottom: 2rem;
@@ -819,9 +831,6 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .projects {
-    height: 85vh;
-  }
   .projects__images {
     display: -ms-grid;
     display: grid;

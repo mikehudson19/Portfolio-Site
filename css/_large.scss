@@ -1,15 +1,20 @@
 @media (min-width: 920px) {
 
   .projects {
-    height: 85vh;
+    // height: 85vh;
     &__project1 {
       display: grid;
-      grid-template-columns: 5% 50% 25% 15% 5%;
+      grid-template-columns: 3% 50% 30% 14% 3%;
       grid-template-rows: repeat(5, 3rem);
     }
     &__project2 {
       display: grid;
-      grid-template-columns: 5% 50% 25% 15% 5%;
+      grid-template-columns: 3% 50% 30% 14% 3%;
+      grid-template-rows: repeat(5, 3rem);
+    }
+    &__project3 {
+      display: grid;
+      grid-template-columns: 3% 50% 30% 14% 3%;
       grid-template-rows: repeat(5, 3rem);
       margin-bottom: 2rem;
     }
