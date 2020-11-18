@@ -371,7 +371,7 @@
 }
 
 .about {
-  min-height: 100vh;
+  min-height: 80vh;
   background: #f7f7f7;
 }
 
@@ -385,7 +385,7 @@
 .about__subheading {
   font-size: 1.55rem;
   text-align: center;
-  padding-top: 1.6rem;
+  padding-top: 2.5rem;
 }
 
 .about__text {
@@ -415,11 +415,12 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 2rem;
+  padding: 2.5rem;
   list-style: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.2rem;
 }
 
 .about__logo {

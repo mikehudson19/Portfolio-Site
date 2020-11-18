@@ -1,5 +1,5 @@
 .about {
-  min-height: 100vh;
+  min-height: 80vh;
   background: rgb(247, 247, 247);
   &__heading {
     font-size: $large-heading;
@@ -10,7 +10,7 @@
   &__subheading {
     font-size: $medium-heading;
     text-align: center;
-    padding-top: 1.6rem;
+    padding-top: 2.5rem;
   }
   &__text {
     padding: 0.6rem 2.5rem;
@@ -28,9 +28,10 @@
   }
   &__tech {
     @include flex(row, space-around);
-    padding: 2rem;
+    padding: 2.5rem;
     list-style: none;
     align-items: center;
+    font-size: 1.2rem;
   }
   &__logo {
     width: 3.5rem;
