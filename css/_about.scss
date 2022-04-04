@@ -36,4 +36,19 @@
   &__logo {
     width: 3.5rem;
   }
+  &__table {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+
+    table {
+      width: 60%;
+    }
+
+    tr {
+      height: 2.5rem;
+    }
+  }
 }

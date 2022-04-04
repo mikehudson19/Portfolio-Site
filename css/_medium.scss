@@ -148,3 +148,14 @@
   } 
  }
 }
+
+.about {
+  &__table {
+    // display: none;
+    margin-bottom: 3rem;
+
+    table {
+      width: 90%;
+    }
+  }
+}

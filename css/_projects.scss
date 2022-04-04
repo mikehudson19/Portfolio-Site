@@ -1,7 +1,17 @@
-
 .projects {
   @include flex(column, center);
+  align-items: center;
   background: $light-color;
+
+  &__project1 {
+    width: 70vw;
+  }
+  &__project2 {
+    width: 70vw;
+  }
+  &__project3 {
+    width: 70vw;
+  }
   &__heading {
     font-size: $large-heading;
     padding: 1.6rem 0;
@@ -22,28 +32,11 @@
     grid-row-gap: 1rem;
   }
   &__image:first-child {
-    width: 75%;
-    // height: 75%;
+    width: 5%;
+    height: 80%;
     margin: 0 auto;
     grid-column: 1 / span 7;
     box-shadow: 0 0 12px 4px rgb(214, 214, 214);
-  }
-  &__image:nth-child(2n) {
-    width: 60%;
-    // height: 70%;
-
-    grid-column: 1 / span 3;
-    box-shadow: 0 0 12px 4px rgb(214, 214, 214);
-    justify-self: end;
-  }
-  &__image:nth-child(3n) {
-    width: 70%;
-    // height: 65%;
-
-    grid-column: 4 / span 3;
-    box-shadow: 0 0 12px 4px rgb(214, 214, 214);
-    align-self: center;
-    justify-self: end;
   }
   &__links {
     @include flex(row, center);

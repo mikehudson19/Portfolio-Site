@@ -32,9 +32,14 @@
     <div class="modal"></div>
 
     <section class="showcase">
-      <h1 class="showcase__heading">
-        My name is Michael and I'm a web developer.
-      </h1>
+      <div>
+        <h1 class="showcase__heading">
+          Michael Hudson.
+        </h1>
+        <h2>
+          Software developer.
+        </h2>
+      </div>
       <div class="showcase__links">
         <a class="showcase__link" href="#projects">View My Work</a>
         <a class="showcase__link" href="#contact">Contact Me</a>
@@ -48,16 +53,30 @@
       <h1 class="projects__heading">My Work</h1>
 
       <div class="projects__project1">
-        <h2 class="projects__subheading">VIKKI Design</h2>
-        <p class="projects__description">E-Commerce Website</p>
+        <h2 class="projects__subheading">Property Listing Site</h2>
+        <p class="projects__description">Property listing site with Angular in-memory-api</p>
+        <div class="projects__images">
+          <img class="projects__image" src="/images/MP - Desktop.png" alt="" />
+        </div>
+        <div class="projects__links">
+          <a class="projects__link" href="https://mountain-property.web.app/" target="_blank">View Site</a>
+          <a class="projects__link" href="https://github.com/mikehudson19/property-website" target="_blank">View GitHub</a>
+        </div>
+        <div class="projects__info">
+          <h4 class="projects__underheading">Tech Stack</h4>
+          <p class="projects__text">Angular, TypeScript, HTML, CSS</p>
+        </div>
+      </div>
+
+      <div class="projects__project2">
+        <h2 class="projects__subheading">E-Commerce Front-End</h2>
+        <p class="projects__description">E-Commerce front-end site using vanilla JS.</p>
         <div class="projects__images">
           <img
             class="projects__image"
             src="/images/vikki-full copy_opt.jpg"
             alt=""
           />
-          <img class="projects__image" src="/images/vikki phone-2_opt.png" alt="" />
-          <img class="projects__image" src="/images/vikki-ipad-old_opt.png" alt="" />
         </div>
         <div class="projects__links">
           <a
@@ -79,13 +98,11 @@
         </div>
       </div>
 
-      <div class="projects__project2">
+      <div class="projects__project3">
         <h2 class="projects__subheading">User Registration & Login</h2>
         <p class="projects__description">User registration and login form.</p>
         <div class="projects__images">
           <img class="projects__image" src="/images/userlogin-full.png" alt="" />
-          <img class="projects__image" src="/images/userlogin-phone.png" alt="" />
-          <img class="projects__image" src="/images/userlogin-ipad.png" alt="" />
         </div>
         <div class="projects__links">
           <a class="projects__link" href="https://still-savannah-48634.herokuapp.com/" target="_blank">View Site</a>
@@ -97,23 +114,7 @@
         </div>
       </div>
 
-      <div class="projects__project3">
-        <h2 class="projects__subheading">Node.js Replica Site</h2>
-        <p class="projects__description">Replica of the Node.js Website</p>
-        <div class="projects__images">
-          <img class="projects__image" src="/images/node-full-opt.png" alt="" />
-          <img class="projects__image" src="/images/node-phone-old_opt.png" alt="" />
-          <img class="projects__image" src="/images/node-ipad.png" alt="" />
-        </div>
-        <div class="projects__links">
-          <a class="projects__link" href="https://node-replica.netlify.app/" target="_blank">View Site</a>
-          <a class="projects__link" href="https://github.com/mikehudson19/node-replica" target="_blank">View GitHub</a>
-        </div>
-        <div class="projects__info">
-          <h4 class="projects__underheading">Tech Stack</h4>
-          <p class="projects__text">HTML, CSS, JavaScript</p>
-        </div>
-      </div>
+      
     </section>
 
     <section id="contact" class="contact">
@@ -122,7 +123,7 @@
       <div class="contact__methods">
         <ul class="contact__list">
           <li class="contact__listItem">mikehudson19@live.co.uk</li>
-          <li class="contact__listItem">+27 76 395 3475</li>
+          <li class="contact__listItem">+27 71 126 1654</li>
           <li>
             <a
               href="https://www.linkedin.com/in/michaelgeorgehudson/"
@@ -158,45 +159,39 @@
       <p class="about__text">
         I left my career in finance to pursue a vocation that I loved - something that I could devote myself to and call my craft.
       </p>
-      <p class="about__text">
-        What do I want to achieve as a web developer?
-      </p>
-      <p class="about__text">
-        I want to <span class="about__text--bold">create things</span> that
-        <span class="about__text--bold">help people</span>. I want to build
-        websites that improve people's lives and bring them closer to realizing
-        their dreams.
-      </p>
      
-      <a href="https://www.dropbox.com/s/xt22xim5fh0zvki/Michael_Hudson_CV.pdf?dl=0" class="about__link" target="_blank">View My CV</a>
+      <a href="https://www.dropbox.com/s/p64bl6p96h6h4o4/Michael_Hudson_CV.pdf?dl=0" class="about__link" target="_blank">View My CV</a>
       <h2 class="about__subheading">Technologies I use:</h2>
-      <ul class="about__tech">
-        <li>
-          HTML
-        </li>
-        <li>CSS</li>
-        <li>
-          JavaScript
-        </li>
-        <li>
-          TypeScript
-        </li>
-        <li>
-          Angular
-        </li>
-        <li>
-          C#
-        </li>
-        <li>
-          .NET CORE
-        </li>
-        <li>
-          Node.JS
-        </li>
-        <li>
-          MongoDB
-        </li>
-      </ul>
+
+      <div class="about__table">
+        <table class ="">
+          <tr>
+             <td>HTML</td>
+             <td>CSS</td>
+             <td>JavaScript</td>
+  
+          </tr>
+          
+          <tr>
+             <td>TypeScript</td>
+             <td>Angular</td>
+             <td>C#</td>
+  
+          </tr>
+          <tr>
+            <td>.NET Core</td>
+            <td>NodeJs</td>
+            <td>Sequelize</td>
+  
+         </tr>
+         <tr>
+          <td>MongDB</td>
+          <td>SQL</td>
+  
+       </tr>
+       </table>
+      </div>
+      
     </section>
     <script src="app.js"></script>
   </body>
